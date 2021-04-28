@@ -30,7 +30,7 @@ $ make install
 #### Create the directory
 
 ```bash
-$ mkdir -p $GOPATH/src/github.com/yomo-zipper-noise-example && cd $_
+$ mkdir -p $GOPATH/src/github.com/{YOUR_GITHUB_USERNAME}/yomo-zipper-noise-example && cd $_
 ```
 
 #### Create  workflow.yaml
