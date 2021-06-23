@@ -6,12 +6,12 @@ RUN apt-get update && \
 RUN cp  /usr/share/zoneinfo/Asia/Shanghai /etc/localtime  && \
     echo 'Asia/Shanghai'  > /etc/timezone
 
-RUN GO111MODULE=off go get github.com/yomorun/yomo; exit 0
-RUN cd $GOPATH/src/github.com/yomorun/yomo && make install
+RUN go install github.com/yomorun/cli/yomo@latest; exit 0
 
 WORKDIR $GOPATH/src/app
 COPY workflow.yaml .
 
 EXPOSE 9999/udp
 
-CMD ["sh", "-c", "yomo wf run workflow.yaml"]
+CMD ["sh", "-c", "yomo serve -c workflow.yaml"]
+

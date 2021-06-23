@@ -2,10 +2,12 @@ name: Service
 host: 0.0.0.0
 port: 9999
 flows:
-  - name: Noise Serverless
+  - name: NoiseServerless
     host: noise-flow
+    #host: localhost
     port: 4242
 sinks:
-  - name: Socket.io Server
+  - name: SocketServer
     host: noise-sink
+    #host: localhost
     port: 4141
