@@ -40,11 +40,11 @@ name: Service
 host: 0.0.0.0
 port: 9999
 flows:
-  - name: Noise Serverless
+  - name: NoiseServerless
     host: noise-flow
     port: 4242
 sinks:
-  - name: Socket.io Server
+  - name: SocketServer
     host: noise-sink
     port: 4141
 ```
@@ -54,7 +54,7 @@ host: change to the address of the actual deployed service
 #### Run the service
 
 ```bash
-yomo wf run workflow.yaml
+yomo serve -c workflow.yaml
 ```
 
 ### Container
