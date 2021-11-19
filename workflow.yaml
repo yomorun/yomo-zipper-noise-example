@@ -3,11 +3,5 @@ host: 0.0.0.0
 port: 9999
 flows:
   - name: NoiseServerless
-    host: noise-flow
-    #host: localhost
-    port: 4242
 sinks:
   - name: SocketServer
-    host: noise-sink
-    #host: localhost
-    port: 4141
