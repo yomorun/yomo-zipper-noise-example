@@ -11,7 +11,7 @@ This is part of the [example-noise](https://github.com/yomorun/example-noise), w
 > **Note:** YoMo requires Go 1.15 and above, run `go version` to get the version of Go in your environment, please follow [this link](https://golang.org/doc/install) to install or upgrade if it doesn't fit the requirement.
 
 ```bash
-go install github.com/yomorun/cli/yomo@v0.0.5
+go install github.com/yomorun/cli/yomo@v0.1.3
 ```
 
 ### 2. Create your zipper service
@@ -28,9 +28,8 @@ $ mkdir -p $GOPATH/src/github.com/{YOUR_GITHUB_USERNAME}/yomo-zipper-noise-examp
 name: Service
 host: 0.0.0.0
 port: 9999
-flows:
+functions:
   - name: NoiseServerless
-sinks:
   - name: SocketServer
 ```
 
