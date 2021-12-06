@@ -60,6 +60,6 @@ docker pull yomorun/noise-zipper
 You can run the service with the following command: 
 
 ```bash
-docker run --rm --name noise-zipper -p 9999:9999 yomorun/noise-zipper:latest
+docker run --rm --name noise-zipper -p 9999:9999 yomorun/noise-zipper:0.0.6
 ```
 
